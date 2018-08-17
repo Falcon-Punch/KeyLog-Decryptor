@@ -10,8 +10,8 @@ const std::string &saltStr3 = "_SOUL=*DARK::";
 const std::string &BASE64_CODES = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 // Function prototypes
-std::string decryptB64(std::string s);
-std::string base64_decode(const std::string &s);
+std::string decryptB64(std::string str);
+std::string base64_decode(const std::string &str);
 
 int main(int argc, char *argv[])
 {
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 		
 	outFile << data;
 
-	std::cout << "Decoding was successful!" << std::endl;
+	std::cout << "Decryption was successful!" << std::endl;
 
 	return 0;
 }
